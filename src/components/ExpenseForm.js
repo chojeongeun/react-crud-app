@@ -16,17 +16,17 @@ export default class ExpenseForm extends Component {
               placeholder="예) 콜라"
             />
           </div>
-        </div>
 
-        <div className="form-group">
-          <label htmlFor="amount">비용</label>
-          <input
-            type="number"
-            className="form-control"
-            id="amount"
-            name="amount"
-            placeholder="예) 100"
-          />
+          <div className="form-group">
+            <label htmlFor="amount">비용</label>
+            <input
+              type="number"
+              className="form-control"
+              id="amount"
+              name="amount"
+              placeholder="예) 100"
+            />
+          </div>
         </div>
 
         <button type="submit" className="btn">
