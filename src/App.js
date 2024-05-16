@@ -92,7 +92,15 @@ const App = () => {
             marginTop: "1rem",
           }}
         >
-          <p style={{ fontSize: "2rem" }}>총합계:</p>
+          <p style={{ fontSize: "2rem" }}>
+            총합계:
+            <span>
+              {expenses.reduce((acc, curr) => {
+                return (acc += curr.amount);
+              }, 0)}
+              원
+            </span>
+          </p>
         </div>
       </div>
     </main>
